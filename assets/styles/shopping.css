@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #426b1f;
+  --black: black;
+  --white: white;
+  --gray: #e6e6e6;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.basket .container .selected_items {
+  background-color: var(--gray);
+  border-radius: 24px;
+}
+.basket .container .titel_basket {
+  border-bottom: 2px solid var(--gray);
+}
+.basket .container .titel_basket h2 {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -2%;
+  font-family: "Newsreader", serif;
+  text-transform: capitalize;
+}
+.basket .container .titel_basket h2 span {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  text-transform: none;
+}
+.basket .container .selected_items {
+  padding: 20px;
+  display: flex;
+}
+.basket .container .selected_items .info_select {
+  padding: 10px;
+}
+.basket .container .selected_items .info_select h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  line-height: 26px;
+}
+.basket .container .selected_items .info_select span {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: var(--green);
+  line-height: 26px;
+}
+.basket .container .selected_items .info_select h4 {
+  background-color: var(--white);
+  border-radius: 20px;
+  width: 128px;
+  padding: 5px;
+  margin: 5px;
+}
