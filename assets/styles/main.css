@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #426b1f;
+  --black: black;
+  --white: white;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+img {
+  width: 100%;
+}
+.hero {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.hero .container h1 {
+  font-family: "Newsreader", serif;
+  font-size: 64px;
+  letter-spacing: -2%;
+  line-height: 76.8px;
+}
+.hero .container .our_shop {
+  display: block;
+  width: fit-content;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+  margin: 30px auto;
+}
+.vegetables {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  padding-top: 100px;
+}
+.vegetables .vg img {
+  margin-right: 15px;
+}
+figcaption {
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: -1%;
+  font-family: "Inter", sans-serif;
+}
+.what_we_believe {
+  padding: 100px;
+  font-family: "Inter", sans-serif;
+}
+.what_we_believe .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.what_we_believe .container h2 {
+  width: 150px;
+  font-size: 14px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+}
+.what_we_believe .container article {
+  width: 822px;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.what_we_believe .container article p {
+  line-height: 160%;
+}
