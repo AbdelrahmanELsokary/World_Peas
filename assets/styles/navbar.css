@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: #426b1f;
+  --black: black;
+  --white: white;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 35px 0;
+  background-color: var(--white);
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  font-size: 32px;
+  font-family: "Newsreader", serif;
+  color: var(--green);
+}
+.container ul {
+  display: flex;
+}
+.container ul li a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+}
+.container ul li .basket_btn {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+}
