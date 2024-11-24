@@ -56,8 +56,13 @@ img {
   justify-content: end;
   padding-top: 100px;
 }
-.vegetables .vg img {
-  margin-right: 15px;
+.vegetables .vg {
+  margin-right: 20px;
+}
+@media (min-width: 400px) {
+  .vegetables .vg img {
+    margin-left: 10px;
+  }
 }
 figcaption {
   font-size: 14px;
@@ -66,7 +71,7 @@ figcaption {
   font-family: "Inter", sans-serif;
 }
 .what_we_believe {
-  padding: 100px;
+  padding-top: 100px;
   font-family: "Inter", sans-serif;
 }
 .what_we_believe .container {

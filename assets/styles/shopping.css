@@ -6,7 +6,7 @@
 :root {
   --green: #426b1f;
   --black: black;
-  --white: white;
+  --white: #fafaf5;
   --gray: #e6e6e6;
 }
 .container {
@@ -22,12 +22,12 @@ a {
   text-decoration: none;
   text-transform: capitalize;
 }
-.basket .container .selected_items {
-  background-color: var(--gray);
-  border-radius: 24px;
+span {
+  font-family: "Inter", sans-serif;
 }
 .basket .container .titel_basket {
   border-bottom: 2px solid var(--gray);
+  padding-bottom: 30px;
 }
 .basket .container .titel_basket h2 {
   font-size: 64px;
@@ -36,36 +36,58 @@ a {
   font-family: "Newsreader", serif;
   text-transform: capitalize;
 }
-.basket .container .titel_basket h2 span {
+.basket .container .titel_basket span {
   font-size: 20px;
   font-weight: 300;
-  font-family: "Inter", sans-serif;
   text-transform: none;
 }
+.items {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--gray);
+  border-radius: 24px;
+  margin-top: 40px;
+  overflow: hidden;
+  background-color: var(--white);
+}
 .basket .container .selected_items {
-  padding: 20px;
   display: flex;
 }
 .basket .container .selected_items .info_select {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
 .basket .container .selected_items .info_select h3 {
   font-size: 20px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
   line-height: 26px;
+  margin-bottom: 15px;
 }
-.basket .container .selected_items .info_select span {
+.basket .container .selected_items .info_select .price {
   font-size: 20px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
-  color: var(--green);
   line-height: 26px;
+  text-transform: capitalize;
+  color: var(--green);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
-.basket .container .selected_items .info_select h4 {
-  background-color: var(--white);
+.basket .container .selected_items .info_select .how_many {
+  border: 2px solid var(--gray);
   border-radius: 20px;
   width: 128px;
-  padding: 5px;
-  margin: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.basket .container .items .price-2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
 }
