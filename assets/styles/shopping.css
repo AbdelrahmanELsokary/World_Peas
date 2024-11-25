@@ -7,6 +7,7 @@
   --green: #426b1f;
   --black: black;
   --white: #fafaf5;
+  --white2: white;
   --gray: #e6e6e6;
 }
 .container {
@@ -24,6 +25,7 @@ a {
 }
 span {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 .basket .container .titel_basket {
   border-bottom: 2px solid var(--gray);
@@ -37,14 +39,13 @@ span {
   text-transform: capitalize;
 }
 .basket .container .titel_basket span {
-  font-size: 20px;
   font-weight: 300;
   text-transform: none;
 }
 .items {
   display: flex;
   justify-content: space-between;
-  border: 1px solid var(--gray);
+  border: 2px solid var(--gray);
   border-radius: 24px;
   margin-top: 40px;
   overflow: hidden;
@@ -67,7 +68,6 @@ span {
   margin-bottom: 15px;
 }
 .basket .container .selected_items .info_select .price {
-  font-size: 20px;
   font-weight: 600;
   line-height: 26px;
   text-transform: capitalize;
@@ -76,18 +76,85 @@ span {
   margin-bottom: 15px;
 }
 .basket .container .selected_items .info_select .how_many {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 2px solid var(--gray);
   border-radius: 20px;
   width: 128px;
   height: 40px;
-  display: flex;
-  align-items: center;
   padding: 15px;
   font-size: 16px;
   font-weight: 600;
 }
+.how_many img {
+  width: 20px;
+}
 .basket .container .items .price-2 {
-  font-size: 20px;
   font-weight: 600;
   padding: 20px;
+}
+.all_items {
+  width: 60%;
+}
+.items_and_summary {
+  display: flex;
+  justify-content: space-between;
+}
+.summary {
+  background-color: var(--white);
+  border: 2px solid var(--gray);
+  border-radius: 24px;
+  width: 35%;
+  height: 320px;
+  margin-top: 40px;
+  padding: 20px;
+}
+.summary h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.summary .all_summary {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.summary .all_summary .info_total,
+.num_total {
+  display: flex;
+  flex-direction: column;
+}
+.info_total .total_summary {
+  font-weight: 600;
+}
+.summary .all_summary .info_total span {
+  font-size: 16px;
+  line-height: 20.8px;
+  padding-top: 20px;
+}
+.summary .all_summary .num_total span {
+  padding-top: 20px;
+}
+.summary .all_summary .num_total .total {
+  font-weight: 600;
+}
+.summary .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+}
+.summary .btn a {
+  color: var(--white2);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+}
+.summary .btn img {
+  width: 30px;
 }
