@@ -29,7 +29,7 @@ span {
 }
 .basket .container .titel_basket {
   border-bottom: 2px solid var(--gray);
-  padding-bottom: 30px;
+  padding: 20px 0 20px 0;
 }
 .basket .container .titel_basket h2 {
   font-size: 64px;
@@ -54,6 +54,7 @@ span {
 .basket .container .selected_items {
   display: flex;
 }
+
 .basket .container .selected_items .info_select {
   display: flex;
   flex-direction: column;
@@ -145,7 +146,7 @@ span {
   align-items: center;
   background-color: var(--green);
   border-radius: 8px;
-  padding: 13px;
+  padding: 5px 15px;
   margin-top: 13px;
 }
 .summary .btn a {
@@ -157,4 +158,28 @@ span {
 }
 .summary .btn img {
   width: 30px;
+  margin-top: 7px;
+}
+@media (max-width: 670px) {
+  .basket .container .items {
+    width: 200px;
+  }
+  .basket .container .items .selected_items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+  }
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .summary {
+    width: 450px;
+  }
+  .summary .btn {
+    width: 226px;
+  }
 }
