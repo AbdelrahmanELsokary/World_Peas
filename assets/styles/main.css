@@ -25,10 +25,9 @@ img {
   width: 100%;
 }
 .hero {
+  display: flex;
   text-align: center;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 .hero .container h1 {
   font-family: "Newsreader", serif;

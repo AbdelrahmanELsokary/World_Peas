@@ -35,28 +35,28 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-.logo a {
+header .logo a {
   font-size: 32px;
   font-family: "Newsreader", serif;
   color: var(--green);
 }
-.container nav ul {
+header .container nav ul {
   display: flex;
 }
-.container nav ul li a {
+header .container nav ul li a {
   text-decoration: none;
   padding: 20px;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   color: var(--black);
 }
-.container nav ul li .basket_btn {
+header .container nav ul li .basket_btn {
   background-color: var(--green);
   color: var(--white);
   border-radius: 8px;
 }
-@media (max-width:750px) {
-  .container nav{
+@media (max-width: 750px) {
+  .container nav {
     display: none;
   }
 }
