@@ -1,100 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="assets/styles/navbar.css" />
-    <link rel="stylesheet" href="assets/styles/shopping.css" />
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="assets/styles/navbar.css" />
+  <link rel="stylesheet" href="assets/styles/shopping.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><a href="index.html"> word peas </a></div>
+      <nav>
+        <ul>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">newstand</a></li>
+          <li><a href="#">who we are</a></li>
+          <li><a href="#">my profile</a></li>
+          <li>
+            <a href="shopping_cart.html" class="basket_btn">basket<span> (3)</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="basket">
       <div class="container">
-        <div class="logo"><a href="index.html"> word peas </a></div>
-        <nav>
-          <ul>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">newstand</a></li>
-            <li><a href="#">who we are</a></li>
-            <li><a href="#">my profile</a></li>
-            <li>
-              <a href="shopping_cart.html" class="basket_btn">basket<span> (3)</span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="basket">
-        <div class="container">
-          <div class="titel_basket">
-            <h2>basket <span>3 items</span></h2>
+        <div class="titel_basket">
+          <h2>basket <span>3 items</span></h2>
+        </div>
+        <div class="items_and_summary">
+          <div class="all_items">
+            <div class="items">
+              <div class="selected_items">
+                <img src="assets/images/Tomato-2.webp" />
+                <div class="info_select">
+                  <h3>Heirloom tomato</h3>
+                  <span class="price">$5.99 / ib</span>
+                  <span class="how_many">1 ib <a href="#"><img
+                        src="assets/images/icons/preview (1).webp" /></a></span>
+                </div>
+              </div>
+              <div class="price-2"><span>$5.99</span></div>
+            </div>
+            <div class="items">
+              <div class="selected_items">
+                <img src="assets/images/ginger-2.webp" />
+                <div class="info_select">
+                  <h3>Organic ginger</h3>
+                  <span class="price">$12.99 / lb</span>
+                  <span class="how_many">0.5 lb <a href="#"><img
+                        src="assets/images/icons/2preview.webp" /></a></span>
+                </div>
+              </div>
+              <div class="price-2"><span>$6.50</span></div>
+            </div>
+            <div class="items">
+              <div class="selected_items">
+                <img src="assets/images/onion.webp" />
+                <div class="info_select">
+                  <h3>Sweet onion</h3>
+                  <span class="price">$2.99 / lb</span>
+                  <span class="how_many">5 lb <a href="#"> <img
+                        src="assets/images/icons/2preview.webp" /></a></span>
+                </div>
+              </div>
+              <div class="price-2"><span>$14.95</span></div>
+            </div>
           </div>
-          <div class="items_and_summary">
-            <div class="all_items">
-              <div class="items">
-                <div class="selected_items">
-                  <img src="assets/images/Tomato-2.webp" />
-                  <div class="info_select">
-                    <h3>Heirloom tomato</h3>
-                    <span class="price">$5.99 / ib</span>
-                    <span class="how_many"
-                      >1 ib <a href="#"><img src="assets/images/icons/download-removebg-preview.png" /></a
-                    ></span>
-                  </div>
-                </div>
-                <div class="price-2"><span>$5.99</span></div>
+          <div class="summary">
+            <h3>Order summary</h3>
+            <div class="all_summary">
+              <div class="info_total">
+                <span>Subtotal</span>
+                <span>Shipping</span>
+                <span>Tax</span>
+                <span class="total_summary">Total</span>
               </div>
-              <div class="items">
-                <div class="selected_items">
-                  <img src="assets/images/ginger-2.png" />
-                  <div class="info_select">
-                    <h3>Organic ginger</h3>
-                    <span class="price">$12.99 / lb</span>
-                    <span class="how_many"
-                      >0.5 lb <a href="#"><img src="assets/images/icons/download-removebg-preview.png" /></a
-                    ></span>
-                  </div>
-                </div>
-                <div class="price-2"><span>$6.50</span></div>
-              </div>
-              <div class="items">
-                <div class="selected_items">
-                  <img src="assets/images/onion.png" />
-                  <div class="info_select">
-                    <h3>Sweet onion</h3>
-                    <span class="price">$2.99 / lb</span>
-                    <span class="how_many"
-                      >5 lb <a href="#"> <img src="assets/images/icons/download-removebg-preview.png" /></a
-                    ></span>
-                  </div>
-                </div>
-                <div class="price-2"><span>$14.95</span></div>
+              <div class="num_total">
+                <span>$27.44</span>
+                <span>$3.99</span>
+                <span>$2.00</span>
+                <span class="total">$33.43</span>
               </div>
             </div>
-            <div class="summary">
-              <h3>Order summary</h3>
-              <div class="all_summary">
-                <div class="info_total">
-                  <span>Subtotal</span>
-                  <span>Shipping</span>
-                  <span>Tax</span>
-                  <span class="total_summary">Total</span>
-                </div>
-                <div class="num_total">
-                  <span>$27.44</span>
-                  <span>$3.99</span>
-                  <span>$2.00</span>
-                  <span class="total">$33.43</span>
-                </div>
-              </div>
-              <div class="btn">
-                <a href="#">Continue to payment </a> <a href="#"> <img src="assets/images/icons/download-removebg-preview (1).png" /></a>
-              </div>
+            <div class="btn">
+              <a href="#">Continue to payment </a> <a href="#"> <img
+                  src="assets/images/icons/preview (1).webp" /></a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
