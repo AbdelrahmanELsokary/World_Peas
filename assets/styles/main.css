@@ -21,9 +21,6 @@ a {
   text-decoration: none;
   text-transform: capitalize;
 }
-img {
-  width: 100%;
-}
 .hero {
   display: flex;
   text-align: center;

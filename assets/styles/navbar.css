@@ -55,8 +55,31 @@ header .container nav ul li .basket_btn {
   color: var(--white);
   border-radius: 8px;
 }
+header .container nav label {
+  display: none;
+}
+header .container nav input {
+  appearance: none;
+}
 @media (max-width: 750px) {
-  .container nav {
+  header .container nav ul {
     display: none;
+    background-color: darkgrey;
+    position: absolute;
+    right: 0px;
+  }
+  header .container nav ul li {
+    padding: 10px;
+    border: 1px solid;
+  }
+  header .container nav label {
+    display: block;
+  }
+  header .container nav input:checked ~ ul {
+    display: block;
+  }
+  header .container nav ul li .basket_btn {
+    padding: 10px;
+    margin-left: 17px;
   }
 }
